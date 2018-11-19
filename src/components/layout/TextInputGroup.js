@@ -12,7 +12,7 @@ const TextInputGroup = ({
   error
 }) => {
   return (
-    <div className='form-group'>
+    <div className="form-group">
       <label htmlFor={name}>{label}</label>
       <input
         type={type}
@@ -24,7 +24,7 @@ const TextInputGroup = ({
         value={value}
         onChange={onChange}
       />
-      {error && <div className='invalid-feedback'> {error} </div>}
+      {error && <div className="invalid-feedback">{error}</div>}
     </div>
   );
 };
@@ -42,4 +42,5 @@ TextInputGroup.propTypes = {
 TextInputGroup.defaultProps = {
   type: 'text'
 };
+
 export default TextInputGroup;
